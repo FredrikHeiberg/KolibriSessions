@@ -1195,3 +1195,74 @@ body.vintage .testimonials .owl-controls .owl-next {
 #split {
   margin: 5%;
 }
+
+
+
+
+
+#portfoliolist2 .mix {
+  width: 31%;
+  margin: 1%;
+  display: none;
+  float: left;
+  overflow: hidden;
+}
+#portfoliolist2 .mix .portfolio-wrapper {
+  overflow: hidden;
+  position: relative !important;
+  background: #222;
+  cursor: pointer;
+}
+#portfoliolist2 .mix .portfolio-wrapper img {
+  max-width: 100%;
+  position: relative;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#portfoliolist2 .mix .portfolio-wrapper img:hover {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+#portfoliolist2 .mix .portfolio-wrapper .caption {
+  position: absolute;
+  width: 100%;
+  height: 75px;
+  bottom: -75px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#portfoliolist2 .mix .portfolio-wrapper .caption .caption-bg {
+  background: #EF4035;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#portfoliolist2 .mix .portfolio-wrapper .caption .caption-text {
+  color: white;
+  position: relative;
+  z-index: 500;
+  padding: 15px 8px;
+}
+#portfoliolist2 .mix .portfolio-wrapper .caption .caption-text a.text-title {
+  color: white;
+}
+#portfoliolist .mix .portfolio-wrapper .caption .caption-text .text-category {
+  display: block;
+  font-size: 12px;
+}
+#portfoliolist2 .mix:hover .portfolio-wrapper .caption {
+  bottom: 0px;
+}
+/*  #Mobile (Portrait) - Note: Design for a width of 320px */
+@media only screen and (max-width: 767px) {
+  #portfoliolist2 .mix {
+    width: 48%;
+    margin: 1%;
+  }
+}
